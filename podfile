@@ -1,4 +1,4 @@
 target ‘Banner’ do
 use_frameworks!
-pod ‘Jatis-iOS’
+pod ‘Jatis-iOS’ , '0.2.3.4'
 end
