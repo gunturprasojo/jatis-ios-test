@@ -1,0 +1,16 @@
+PODS:
+  - Jatis-iOS (0.1.0)
+
+DEPENDENCIES:
+  - Jatis-iOS
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Jatis-iOS
+
+SPEC CHECKSUMS:
+  Jatis-iOS: da006686eb715328d05e0adca01deb7084d8d285
+
+PODFILE CHECKSUM: 1c2f92cd8492915209ec7187295b1cdbe53f4c52
+
+COCOAPODS: 1.6.0

@@ -1,0 +1,6 @@
+framework module Jatis_iOS {
+  umbrella header "Jatis-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

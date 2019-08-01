@@ -1,0 +1,4 @@
+target ‘Banner’ do
+use_frameworks!
+pod ‘Jatis-iOS’
+end
