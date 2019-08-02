@@ -99,6 +99,14 @@
                                     <segue destination="ff6-ae-gNA" kind="show" id="Vyq-Le-HnA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBl-nt-4Bi">
+                                <rect key="frame" x="222" y="425" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="DatePicker"/>
+                                <connections>
+                                    <segue destination="LoU-Zh-U3x" kind="show" id="TmT-Kv-Die"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -423,6 +431,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9w0-Gj-bH1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1027" y="733"/>
+        </scene>
+        <!--Date PickerVC-->
+        <scene sceneID="Zuf-va-oP4">
+            <objects>
+                <viewController id="LoU-Zh-U3x" customClass="DatePickerVC" customModule="Banner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bew-ae-jq1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f31-Du-vol">
+                                <rect key="frame" x="129" y="114" width="117" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.53862505655800175" blue="0.33248707082115703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Show DatePicker"/>
+                                <connections>
+                                    <action selector="showDatePicker:" destination="LoU-Zh-U3x" eventType="touchUpInside" id="drx-mZ-10A"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqW-fv-Pbw">
+                                <rect key="frame" x="166.5" y="154" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sqW-fv-Pbw" firstAttribute="centerX" secondItem="bew-ae-jq1" secondAttribute="centerX" id="T0S-Ho-z9N"/>
+                            <constraint firstItem="sqW-fv-Pbw" firstAttribute="top" secondItem="f31-Du-vol" secondAttribute="bottom" constant="10" id="fHx-u0-BEI"/>
+                            <constraint firstItem="f31-Du-vol" firstAttribute="centerX" secondItem="bew-ae-jq1" secondAttribute="centerX" id="jlY-UH-vgR"/>
+                            <constraint firstItem="f31-Du-vol" firstAttribute="top" secondItem="aWt-7Y-JyA" secondAttribute="top" constant="50" id="kq4-X1-1wP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aWt-7Y-JyA"/>
+                    </view>
+                    <connections>
+                        <outlet property="lbDate" destination="sqW-fv-Pbw" id="vNx-wF-mGm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SDi-W2-Qhy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-759" y="-700"/>
         </scene>
         <!--Jatis Calendar View Controller-->
         <scene sceneID="K4X-5g-Bca">
