@@ -3,16 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1C61FA3AA1419E64CC41D1C7 /* Pods_Banner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB35B4F3FBFA5C18A0AE3C7F /* Pods_Banner.framework */; };
-		95F0F79222F3E93900E8FA94 /* JatisDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F0F78F22F3E93900E8FA94 /* JatisDatePicker.swift */; };
-		95F0F79322F3E93900E8FA94 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F0F79022F3E93900E8FA94 /* UIApplicationExtension.swift */; };
-		95F0F79422F3E93900E8FA94 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F0F79122F3E93900E8FA94 /* UIViewExtension.swift */; };
-		95F0F79722F3E96B00E8FA94 /* DatePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F0F79622F3E96B00E8FA94 /* DatePickerVC.swift */; };
-		95F0F79922F3EBD500E8FA94 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F0F79822F3EBD500E8FA94 /* DateExtension.swift */; };
 		B8012BB52270675700392DD4 /* someView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8012BB42270675700392DD4 /* someView.xib */; };
 		B8012BB722706D3C00392DD4 /* SomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8012BB622706D3C00392DD4 /* SomeView.swift */; };
 		B8012BB922706DA200392DD4 /* ExampleJatisViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8012BB822706DA200392DD4 /* ExampleJatisViewVC.swift */; };
@@ -62,11 +57,6 @@
 /* Begin PBXFileReference section */
 		2B7D0C9AB06AAEC8CABC150D /* Pods-Banner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Banner.debug.xcconfig"; path = "Target Support Files/Pods-Banner/Pods-Banner.debug.xcconfig"; sourceTree = "<group>"; };
 		8FB3DCDEB81AEF91C06EA10D /* Pods-Banner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Banner.release.xcconfig"; path = "Target Support Files/Pods-Banner/Pods-Banner.release.xcconfig"; sourceTree = "<group>"; };
-		95F0F78F22F3E93900E8FA94 /* JatisDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JatisDatePicker.swift; sourceTree = "<group>"; };
-		95F0F79022F3E93900E8FA94 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
-		95F0F79122F3E93900E8FA94 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
-		95F0F79622F3E96B00E8FA94 /* DatePickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerVC.swift; sourceTree = "<group>"; };
-		95F0F79822F3EBD500E8FA94 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		B8012BB42270675700392DD4 /* someView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = someView.xib; sourceTree = "<group>"; };
 		B8012BB622706D3C00392DD4 /* SomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeView.swift; sourceTree = "<group>"; };
 		B8012BB822706DA200392DD4 /* ExampleJatisViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleJatisViewVC.swift; sourceTree = "<group>"; };
@@ -135,25 +125,6 @@
 				BB35B4F3FBFA5C18A0AE3C7F /* Pods_Banner.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		95F0F78E22F3E93900E8FA94 /* JatisDatePicker */ = {
-			isa = PBXGroup;
-			children = (
-				95F0F78F22F3E93900E8FA94 /* JatisDatePicker.swift */,
-				95F0F79022F3E93900E8FA94 /* UIApplicationExtension.swift */,
-				95F0F79122F3E93900E8FA94 /* UIViewExtension.swift */,
-				95F0F79822F3EBD500E8FA94 /* DateExtension.swift */,
-			);
-			path = JatisDatePicker;
-			sourceTree = "<group>";
-		};
-		95F0F79522F3E94800E8FA94 /* JatisDatePicker */ = {
-			isa = PBXGroup;
-			children = (
-				95F0F79622F3E96B00E8FA94 /* DatePickerVC.swift */,
-			);
-			path = JatisDatePicker;
 			sourceTree = "<group>";
 		};
 		A21FA170FD27F9D6294B595A /* Pods */ = {
@@ -250,7 +221,6 @@
 		B8B63107226239C20049B2C5 /* Banner */ = {
 			isa = PBXGroup;
 			children = (
-				95F0F78E22F3E93900E8FA94 /* JatisDatePicker */,
 				B86BDD9222F1928900C5368D /* JatisTextView */,
 				B8CB50D122C211BA006E0BE7 /* JatisPopUpTable */,
 				B83FA50D2278131300B86370 /* JatisCalendar */,
@@ -313,7 +283,6 @@
 		B8DAF5FB227037BC00B9DD15 /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
-				95F0F79522F3E94800E8FA94 /* JatisDatePicker */,
 				B86BDD9522F1953D00C5368D /* JatisTextView */,
 				B8CB50CE22C2113C006E0BE7 /* JatisPopUpTable */,
 				B83FA5102278152900B86370 /* JatisCalendar */,
@@ -531,9 +500,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8882CC2227E96F4000C9050 /* JatisBanner2.swift in Sources */,
-				95F0F79922F3EBD500E8FA94 /* DateExtension.swift in Sources */,
 				B84297162276E2A600B2EDE5 /* TextFieldViewController.swift in Sources */,
-				95F0F79422F3E93900E8FA94 /* UIViewExtension.swift in Sources */,
 				B8012BB722706D3C00392DD4 /* SomeView.swift in Sources */,
 				B86BDD9422F192B000C5368D /* JatisTextView.swift in Sources */,
 				B8DAF60422704BF700B9DD15 /* JatisViewLoaderVC.swift in Sources */,
@@ -544,16 +511,13 @@
 				B8B43941226F0D7700DF79C8 /* CollectionViewJatisBannerExtension.swift in Sources */,
 				B8DAF6002270492A00B9DD15 /* JatisShadow.swift in Sources */,
 				B8012BB922706DA200392DD4 /* ExampleJatisViewVC.swift in Sources */,
-				95F0F79322F3E93900E8FA94 /* UIApplicationExtension.swift in Sources */,
 				B84297192276E34700B2EDE5 /* JatisTextField.swift in Sources */,
 				B8B6310B226239C20049B2C5 /* LoadBannerViewController.swift in Sources */,
-				95F0F79722F3E96B00E8FA94 /* DatePickerVC.swift in Sources */,
 				B8B63109226239C20049B2C5 /* AppDelegate.swift in Sources */,
 				B8B6313722623A1F0049B2C5 /* JatisBanner.swift in Sources */,
 				B83FA5122278153B00B86370 /* JatisCalendarViewController.swift in Sources */,
 				B8FB4EB822C2123A0026097C /* JatisPopUpTable.swift in Sources */,
 				B83FA50F2278132500B86370 /* JatisCalendar.swift in Sources */,
-				95F0F79222F3E93900E8FA94 /* JatisDatePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
