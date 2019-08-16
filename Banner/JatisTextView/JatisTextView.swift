@@ -17,7 +17,7 @@ public protocol JatisTextViewProtocol: class {
 
 
 
-class JatisTextView: UIView {
+open class JatisTextView: UIView {
 
     //  Create an Int type to define textfield tag.
     open var tagTextView: Int = 0
