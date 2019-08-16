@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import Jatis_iOS
 
 class DatePickerVC: UIViewController {
 
     @IBOutlet weak var lbDate: UILabel!
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         JatisDatePicker.delegate = self
     }
     
