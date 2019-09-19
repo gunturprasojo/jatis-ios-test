@@ -70,6 +70,8 @@ open class JatisTextView: UIView {
     
     open var underlineHeight : CGFloat = 1.0
     
+    open var initablePlaceholder : Bool = true
+    
     
     // Declare a delegate to receiver actions of textfield
     public weak var delegate: JatisTextViewProtocol?
@@ -115,14 +117,26 @@ extension JatisTextView {
         self.formateKeyboardOption()
         self.addSubview(textView)
         self.addSubview(labelPlaceholder)
-        
+        self.setupUnderlined()
+        self.setupInitablePlaceholder()
+    }
     
+    func setupUnderlined(){
         if self.isUnderlined {
             underline.frame = CGRect(x: 0, y: self.bounds.origin.y + self.size.height - 1, width: self.size.width, height: self.underlineHeight)
             underline.backgroundColor = underlineColorBefore
             self.addSubview(underline)
         }
-        
+    }
+    
+    func setupInitablePlaceholder(){
+        if initablePlaceholder {
+            if textView.text != "" {
+                self.setPlaceholderToTop()
+            }else {
+                self.setPlaceholderToBottom()
+            }
+        }
     }
     
     private func formateKeyboardOption(){
@@ -178,7 +192,7 @@ extension JatisTextView: UITextViewDelegate {
 extension JatisTextView {
     public func minimizePlaceholder(){
         UIView.animate(withDuration: 0.15, animations: {
-            self.labelPlaceholder.frame = CGRect(x: 5, y: -(self.fontPlaceholder.pointSize), width:  self.bounds.size.width-5, height: self.fontPlaceholder.pointSize)// * 0.5)
+           self.setPlaceholderToTop()
         })
         self.labelPlaceholder.font = UIFont(name: fontPlaceholder.fontName, size: fontPlaceholder.pointSize * 0.9)
         labelPlaceholder.textColor = self.placeHolderAfterColor
@@ -188,11 +202,19 @@ extension JatisTextView {
     
     public func expandPlaceholder(){
         UIView.animate(withDuration: 0.15, animations: {
-            self.labelPlaceholder.frame = CGRect(x: 5, y: self.bounds.origin.y/2+2, width: self.bounds.size.width-8, height: self.bounds.size.height-5)
+           self.setPlaceholderToBottom()
         })
         self.labelPlaceholder.font = fontPlaceholder
         labelPlaceholder.textColor = self.placeHolderBeforeColor
         
+    }
+    
+    public func setPlaceholderToBottom(){
+         self.labelPlaceholder.frame = CGRect(x: 5, y: self.bounds.origin.y/2+2, width: self.bounds.size.width-8, height: self.bounds.size.height-5)
+    }
+    
+    public func setPlaceholderToTop(){
+         self.labelPlaceholder.frame = CGRect(x: 5, y: -(self.fontPlaceholder.pointSize), width:  self.bounds.size.width-5, height: self.fontPlaceholder.pointSize)// * 0.5)
     }
     
     public func underlineStateOn(){

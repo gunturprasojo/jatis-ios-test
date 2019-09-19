@@ -35,6 +35,7 @@ open class JatisCalendar: UIView {
     fileprivate var startDate: Date
     fileprivate var endDate : Date
     
+    open var textColor : UIColor = .darkGray
   
     public weak var delegate: JatisCalendarProtocol?
     

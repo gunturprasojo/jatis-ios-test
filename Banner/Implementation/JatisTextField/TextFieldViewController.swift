@@ -40,6 +40,7 @@ class TextFieldViewController: UIViewController {
         
         jatisTextField.layoutIfNeeded()
         usernameTextfield.tagTextfield = 1
+        usernameTextfield.textField.text = "aaaa"
         usernameTextfield.textPlaceholder = "Username"
         usernameTextfield.size = jatisTextField.bounds.size
         usernameTextfield.fontPlaceholder = UIFont(name: "Futura", size: 10)!
