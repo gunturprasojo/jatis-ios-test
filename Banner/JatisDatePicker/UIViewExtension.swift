@@ -11,7 +11,7 @@ import UIKit
 extension UIView {
     typealias action = (Bool)->Void
     func animShow(){
-        UIView.animate(withDuration: 0.5, delay: 0, options: [.curveEaseIn],
+        UIView.animate(withDuration: JatisDatePicker.animationTime, delay: 0, options: [.curveEaseIn],
                        animations: {
                         self.center.y -= self.bounds.height
                         self.layoutIfNeeded()
@@ -20,7 +20,7 @@ extension UIView {
         
     }
     func animHide(_ completion: @escaping action){
-        UIView.animate(withDuration: 0.5, delay: 0, options: [.curveLinear],
+        UIView.animate(withDuration: JatisDatePicker.animationTime, delay: 0, options: [.curveLinear],
                        animations: {
                         self.center.y += self.bounds.height
                         self.layoutIfNeeded()

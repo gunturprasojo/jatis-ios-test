@@ -18,6 +18,9 @@ open class JatisDatePicker: UIView {
     static var datePicker = UIDatePicker()
     static var toolBar = UIToolbar()
     
+    static public var tintButtonColor : UIColor = .darkGray
+    static public var animationTime : Double = 0.25
+    
     static weak var delegate: JatisDatePickerDelegate?
     
     class func show(_ minDate: Date?,_ maxDate: Date?){
@@ -50,7 +53,7 @@ open class JatisDatePicker: UIView {
         toolBar = UIToolbar(frame: CGRect(x: 0, y: self.datePicker.frame.origin.y - 40, width: view.frame.size.width, height: 40))
         toolBar.barStyle = .default
         toolBar.isTranslucent = true
-        toolBar.tintColor = UIColor(red: 92/255, green: 216/255, blue: 255/255, alpha: 1)
+        toolBar.tintColor = self.tintButtonColor//UIColor(red: 92/255, green: 216/255, blue: 255/255, alpha: 1)
         toolBar.sizeToFit()
         
         // Adding Button ToolBar

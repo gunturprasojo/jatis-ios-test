@@ -7,13 +7,16 @@
 //
 
 import UIKit
+//import Jatis_iOS
 
 class DatePickerVC: UIViewController {
 
     @IBOutlet weak var lbDate: UILabel!
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         JatisDatePicker.delegate = self
     }
     
@@ -22,6 +25,8 @@ class DatePickerVC: UIViewController {
     }
     
     @IBAction func showDatePicker(_ sender: UIButton) {
+        JatisDatePicker.tintButtonColor = .red
+        JatisDatePicker.animationTime = 0.25
         JatisDatePicker.show(nil, nil)
     }
     
