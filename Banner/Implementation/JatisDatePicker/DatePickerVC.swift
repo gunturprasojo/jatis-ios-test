@@ -17,6 +17,10 @@ class DatePickerVC: UIViewController {
         JatisDatePicker.delegate = self
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        JatisDatePicker.remove()
+    }
+    
     @IBAction func showDatePicker(_ sender: UIButton) {
         JatisDatePicker.show(nil, nil)
     }

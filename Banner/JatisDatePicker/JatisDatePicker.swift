@@ -86,4 +86,8 @@ open class JatisDatePicker: UIView {
         })
     }
     
+    public static func remove(){
+        cancelClick()
+    }
+    
 }
